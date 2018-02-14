@@ -181,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Accueil
           </a>
         </li>
       
@@ -191,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            A propos
           </a>
         </li>
       
@@ -211,7 +211,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -221,7 +221,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -231,7 +231,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
             
-            Schedule
+            Programma
           </a>
         </li>
       
@@ -317,7 +317,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T20:20:38+08:00">
                 2018-02-12
@@ -361,7 +361,12 @@
           
             <p>#反转字符串<br>    function StringResverse(str){<br>        var arr = str.spilt(“”); // 注意这里的空字符<br>        var arr1 = arr.reverse();<br>        return arr1.join(“”); // 注意这里的空字符<br>    }</p>
 <p>#计算一个数的阶乘<br>    function factorialize(num) {<br>        val = 1;<br>        while (num &gt; 1){<br>        val = val * num;<br>        num –;<br>        }<br>        return val;<br>    }</p>
+<p>#############<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a><br>正则表达式：<br>    例子：字符串 str = The dog chased the cat.<br>    正则匹配： /the/gi<br>    / 是正则表达式头部    the 是想要匹配的模式    / 是正则表达式尾部   g 代表着全局（global）   i 代表忽略大小写</p>
+<p>#############</p>
 <p>#检查回文字符串</p>
+<p>#找出最长单词<br>        function findLongestWord(str) {<br>            var arr = str.split(“ “);<br>            maxValue = arr[0];<br>            for ( var i = 0;i &lt; arr.length ;i++){<br>                if (arr[i].length &gt; maxValue.length){<br>                maxValue = arr[i];<br>                }<br>              }<br>            return maxValue.length;<br>            }<br>        findLongestWord(“What is the average airspeed velocity of an unladen swallow”);</p>
+<p>#句中单词首字母大写<br>        function titleCase(str){<br>            var arr = str.toLowerCase().split(“ “);<br>            for (var i = 0; i &lt; arr.length; i++){<br>            var char = arr[i].charAt(0);<br>            arr[i] = arr[i].replace(char,function(s){return s.toUpperCase();});<br>                }<br>            str = arr.join(“ “);<br>            return str;<br>            }<br>        titleCase(“I’m a little tea pot”);</p>
+<p>#找出多个数组中的最大数<br>        function largestOfFour(arr) {<br>            var arr1 = new Array;<br>            for(var i = 0;i &lt; arr.length;i++){<br>                arr1[i] = arr[i][0];<br>            for (var j = 0;j &lt; arr[i].length; j++){<br>                if(arr[i][j] &gt; arr1[i]){<br>                arr1[i] = arr[i][j];<br>                    }<br>                }<br>            }<br>            return arr1;<br>        }<br>        largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);</p>
 
           
         
@@ -439,7 +444,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T15:44:47+08:00">
                 2018-02-12
@@ -488,6 +493,11 @@
 <p>#Array.prototype.concat()<br>    concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。<br>    语法：var new_array = old_array.concat(value1[, value2[, …[, valueN]]])</p>
 <p>#String.prototype.split()<br>    split():方法使用指定的分隔符字符串将一个String对象分割成字符串数组，以将字符串分隔为子字符串，以确定每个拆分的位置。<br>    语法：str.split([separator[, limit]])<br>    参数：separator<br>            指定表示每个拆分应发生的点的字符串。separator 可以是一个字符串或正则表达式。 如果纯文本分隔符包含多个字符，则必须找到整个字符串来表示分割点。如果在str中省略或不出现分隔符，则返回的数组包含一个由整个字符串组成的元素。如果分隔符为空字符串，则将str原字符串中每个字符的数组形式返回。<br>          limit<br>            一个整数，限定返回的分割片段数量。当提供此参数时，split 方法会在指定分隔符的每次出现时分割该字符串，但在限制条目已放入数组时停止。如果在达到指定限制之前达到字符串的末尾，它可能仍然包含少于限制的条目。新数组中不返回剩下的文本。</p>
 <p>#Array.prototype.join()<br>    join():方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串。<br>    语法：str = arr.join() // 默认为 “,”<br>          str = arr.join(“”)  // 分隔符 === 空字符串 “”<br>          str = arr.join(separator) // 分隔符<br>    参数：separator<br>            指定一个字符串来分隔数组的每个元素。如果需要(separator)，将分隔符转换为字符串。如果省略()，数组元素用逗号分隔。默认为 “,”。如果separator是空字符串(“”)，则所有元素之间都没有任何字符。<br>    返回值：一个所有数组元素连接的字符串。如果 arr.length 为0，则返回空字符串<br>    例子：var joinMe = [“Split”,”me”,”into”,”an”,”array”];<br>          var joinedString = ‘’;<br>        joinedString = joinMe.join(‘ ‘);</p>
+<p>#String.prototype.replace()<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace</a><br>    replace():方法返回一个由替换值替换一些或所有匹配的模式后的新字符串。模式可以是一个字符串或者一个正则表达式, 替换值可以是一个字符串或者一个每次匹配都要调用的函数。<br>    语法：str.replace(regexp|substr, newSubStr|function)<br>    参数：regexp (pattern)<br>            一个RegExp 对象或者其字面量。该正则所匹配的内容会被第二个参数的返回值替换掉。<br>          substr (pattern)<br>            一个要被 newSubStr 替换的字符串。其被视为一整个字符串，而不是一个正则表达式。仅仅是第一个匹配会被替换。<br>          newSubStr (replacement)<br>            用于替换掉第一个参数在原字符串中的匹配部分的字符串。该字符串中可以内插一些特殊的变量名。参考下面的使用字符串作为参数。<br>          function (replacement)<br>            一个用来创建新子字符串的函数，该函数的返回值将替换掉第一个参数匹配到的结果。参考下面的指定一个函数作为参数。<br>    返回值：一个部分或全部匹配由替代模式所取代的新的字符串。<br>    示例；<br>        在 replace() 中使用正则表达式<br>        在下面的例子中，replace() 中使用了正则表达式及忽略大小写标示。<br>        var str = ‘Twas the night before Xmas…’;<br>        var newstr = str.replace(/xmas/i, ‘Christmas’);<br>        console.log(newstr);  // Twas the night before Christmas…<br>        在 replace() 中使用 global 和 ignore 选项<br>        下面的例子中,正则表达式包含有全局替换(g)和忽略大小写(i)的选项,这使得replace方法用’oranges’替换掉了所有出现的”apples”.<br>        var re = /apples/gi;<br>        var str = “Apples are round, and apples are juicy.”;<br>        var newstr = str.replace(re, “oranges”);<br>        // oranges are round, and oranges are juicy.<br>        console.log(newstr);<br>        交换字符串中的两个单词<br>        下面的例子演示了如何交换一个字符串中两个单词的位置，这个脚本使用$1 和 $2 代替替换文本。<br>        var re = /(\w+)\s(\w+)/; //这里的(\w+)表示匹配数字、字母、下划线和加号本身字符， \s表示空白符，包含制表符换行符等。<br>        var str = “John Smith”;<br>        var newstr = str.replace(re, “$2, $1”);<br>        // Smith, John<br>        console.log(newstr);</p>
+<p>#String.prototype.substr()<br>        substr() 方法返回一个字符串中从指定位置开始到指定字符数的字符。<br>        参数：start<br>            开始提取字符的位置。如果为负值，则被看作 strLength + start，其中 strLength 为字符串的长度（例如，如果 start 为 -3，则被看作 strLength + (-3)）。<br>              length<br>            可选。提取的字符数<br>        描述：<br>start 是一个字符的索引。首字符的索引为 0，最后一个字符的索引为 字符串的长度减去1。substr 从 start 位置开始提取字符，提取 length 个字符（或直到字符串的末尾）。</p>
+<p>如果 start 为正值，且大于或等于字符串的长度，则 substr 返回一个空字符串。</p>
+<p>如果 start 为负值，则 substr 把它作为从字符串末尾开始的一个字符索引。如果 start 为负值且 abs(start) 大于字符串的长度，则 substr 使用 0 作为开始提取的索引。注意负的 start 参数不被 Microsoft JScript 所支持。</p>
+<p>如果 length 为 0 或负值，则 substr 返回一个空字符串。如果忽略 length，则 substr 提取字符，直到字符串末尾</p>
 
           
         
@@ -565,7 +575,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T10:43:43+08:00">
                 2018-02-12
@@ -685,7 +695,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T09:42:08+08:00">
                 2018-02-12
@@ -818,7 +828,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">articles</span>
                 </a>
               </div>
             
@@ -868,7 +878,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -876,7 +886,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 

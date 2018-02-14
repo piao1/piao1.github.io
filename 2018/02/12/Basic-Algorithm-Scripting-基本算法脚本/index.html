@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/02/12/Basic-Algorithm-Scripting-基本算法脚本/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="#反转字符串    function StringResverse(str){        var arr = str.spilt(“”); // 注意这里的空字符        var arr1 = arr.reverse();        return arr1.join(“”); // 注意这里的空字符    } #计算一个数的阶乘    function factorialize(nu">
-<meta property="og:updated_time" content="2018-02-12T12:59:31.985Z">
+<meta property="og:updated_time" content="2018-02-13T08:17:23.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Basic Algorithm Scripting 基本算法脚本">
 <meta name="twitter:description" content="#反转字符串    function StringResverse(str){        var arr = str.spilt(“”); // 注意这里的空字符        var arr1 = arr.reverse();        return arr1.join(“”); // 注意这里的空字符    } #计算一个数的阶乘    function factorialize(nu">
@@ -184,7 +184,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Accueil
           </a>
         </li>
       
@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            A propos
           </a>
         </li>
       
@@ -214,7 +214,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -224,7 +224,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -234,7 +234,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
             
-            Schedule
+            Programma
           </a>
         </li>
       
@@ -318,7 +318,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T20:20:38+08:00">
                 2018-02-12
@@ -360,7 +360,12 @@
       
         <p>#反转字符串<br>    function StringResverse(str){<br>        var arr = str.spilt(“”); // 注意这里的空字符<br>        var arr1 = arr.reverse();<br>        return arr1.join(“”); // 注意这里的空字符<br>    }</p>
 <p>#计算一个数的阶乘<br>    function factorialize(num) {<br>        val = 1;<br>        while (num &gt; 1){<br>        val = val * num;<br>        num –;<br>        }<br>        return val;<br>    }</p>
+<p>#############<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a><br>正则表达式：<br>    例子：字符串 str = The dog chased the cat.<br>    正则匹配： /the/gi<br>    / 是正则表达式头部    the 是想要匹配的模式    / 是正则表达式尾部   g 代表着全局（global）   i 代表忽略大小写</p>
+<p>#############</p>
 <p>#检查回文字符串</p>
+<p>#找出最长单词<br>        function findLongestWord(str) {<br>            var arr = str.split(“ “);<br>            maxValue = arr[0];<br>            for ( var i = 0;i &lt; arr.length ;i++){<br>                if (arr[i].length &gt; maxValue.length){<br>                maxValue = arr[i];<br>                }<br>              }<br>            return maxValue.length;<br>            }<br>        findLongestWord(“What is the average airspeed velocity of an unladen swallow”);</p>
+<p>#句中单词首字母大写<br>        function titleCase(str){<br>            var arr = str.toLowerCase().split(“ “);<br>            for (var i = 0; i &lt; arr.length; i++){<br>            var char = arr[i].charAt(0);<br>            arr[i] = arr[i].replace(char,function(s){return s.toUpperCase();});<br>                }<br>            str = arr.join(“ “);<br>            return str;<br>            }<br>        titleCase(“I’m a little tea pot”);</p>
+<p>#找出多个数组中的最大数<br>        function largestOfFour(arr) {<br>            var arr1 = new Array;<br>            for(var i = 0;i &lt; arr.length;i++){<br>                arr1[i] = arr[i][0];<br>            for (var j = 0;j &lt; arr[i].length; j++){<br>                if(arr[i][j] &gt; arr1[i]){<br>                arr1[i] = arr[i][j];<br>                    }<br>                }<br>            }<br>            return arr1;<br>        }<br>        largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);</p>
 
       
     </div>
@@ -462,7 +467,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">articles</span>
                 </a>
               </div>
             
@@ -512,7 +517,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -520,7 +525,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
