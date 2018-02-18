@@ -83,9 +83,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Basic Algorithm Scripting 基本算法脚本">
 <meta property="og:url" content="http://yoursite.com/2018/02/12/Basic-Algorithm-Scripting-基本算法脚本/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Welcome to my blog">
 <meta property="og:description" content="#反转字符串    function StringResverse(str){        var arr = str.spilt(“”); // 注意这里的空字符        var arr1 = arr.reverse();        return arr1.join(“”); // 注意这里的空字符    } #计算一个数的阶乘    function factorialize(nu">
-<meta property="og:updated_time" content="2018-02-13T08:17:23.263Z">
+<meta property="og:updated_time" content="2018-02-14T04:33:07.945Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Basic Algorithm Scripting 基本算法脚本">
 <meta name="twitter:description" content="#反转字符串    function StringResverse(str){        var arr = str.spilt(“”); // 注意这里的空字符        var arr1 = arr.reverse();        return arr1.join(“”); // 注意这里的空字符    } #计算一个数的阶乘    function factorialize(nu">
@@ -124,7 +124,7 @@
 
 
 
-  <title>Basic Algorithm Scripting 基本算法脚本 | Hexo</title>
+  <title>Basic Algorithm Scripting 基本算法脚本 | Welcome to my blog</title>
   
 
 
@@ -154,7 +154,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Welcome to my blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -184,7 +184,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -214,7 +214,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -224,7 +224,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -300,7 +300,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Welcome to my blog">
     </span>
 
     
@@ -318,7 +318,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-12T20:20:38+08:00">
                 2018-02-12
@@ -366,7 +366,10 @@
 <p>#找出最长单词<br>        function findLongestWord(str) {<br>            var arr = str.split(“ “);<br>            maxValue = arr[0];<br>            for ( var i = 0;i &lt; arr.length ;i++){<br>                if (arr[i].length &gt; maxValue.length){<br>                maxValue = arr[i];<br>                }<br>              }<br>            return maxValue.length;<br>            }<br>        findLongestWord(“What is the average airspeed velocity of an unladen swallow”);</p>
 <p>#句中单词首字母大写<br>        function titleCase(str){<br>            var arr = str.toLowerCase().split(“ “);<br>            for (var i = 0; i &lt; arr.length; i++){<br>            var char = arr[i].charAt(0);<br>            arr[i] = arr[i].replace(char,function(s){return s.toUpperCase();});<br>                }<br>            str = arr.join(“ “);<br>            return str;<br>            }<br>        titleCase(“I’m a little tea pot”);</p>
 <p>#找出多个数组中的最大数<br>        function largestOfFour(arr) {<br>            var arr1 = new Array;<br>            for(var i = 0;i &lt; arr.length;i++){<br>                arr1[i] = arr[i][0];<br>            for (var j = 0;j &lt; arr[i].length; j++){<br>                if(arr[i][j] &gt; arr1[i]){<br>                arr1[i] = arr[i][j];<br>                    }<br>                }<br>            }<br>            return arr1;<br>        }<br>        largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);</p>
-
+<p>#检查字符串结尾<br>        function confirmEnding(str,target){<br>            while(str.substr(str.length - target.length) == target){<br>            return true;<br>                }<br>            return false;<br>            }<br>        confirmEnding(“Bastian”, “n”);</p>
+<p>#重复输出字符串<br>        function repeat(str, num) {<br>            var repeatString = “”;<br>            while (num &gt; 0){<br>            repeatString += str;<br>            num –;<br>            }<br>            return repeatString;<br>            }</p>
+<pre><code>repeat(&quot;*&quot;, 3);
+</code></pre>
       
     </div>
     
@@ -467,7 +470,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -517,7 +520,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
