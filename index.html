@@ -286,6 +286,127 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bingblog.top/2018/03/22/JSON-API-and-Ajax/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ICE">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to my blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/22/JSON-API-and-Ajax/" itemprop="url">JSON API and Ajax</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T20:51:35+08:00">
+                2018-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.Trigger Click Events with jQuery 用jQuery触发点击事件<br><a href="https://www.freecodecamp.cn/challenges/trigger-click-events-with-jquery" target="_blank" rel="noopener">https://www.freecodecamp.cn/challenges/trigger-click-events-with-jquery</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                        </span><br><span class="line">     &#125;);</span><br><span class="line">   </span><br><span class="line">  &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>$(document).ready()这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。<br>2.Change Text with Click Events通过点击改变事件<br><a href="https://www.freecodecamp.cn/challenges/change-text-with-click-events#?solution=fccss%0A%20%20%24(document).ready(function()%20%7B%0A%20%20%20%20%24(%22%23getMessage%22).on(%22click%22%2C%20function()%7B%0A%20%20%20%20%20%20%24(%22.message%22).html(%22Here%20is%20the%20message%22)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%7D)%3B%0Afcces%0A%0A%0A%3Cdiv%20class%3D%22container-fluid%22%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Ch2%3ECat%20Photo%20Finder%3C%2Fh2%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Cdiv%20class%20%3D%20%22col-xs-12%20well%20message%22%3E%0A%20%20%20%20%20%20The%20message%20will%20go%20here%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Cdiv%20class%20%3D%20%22col-xs-12%22%3E%0A%20%20%20%20%20%20%3Cbutton%20id%20%3D%20%22getMessage%22%20class%20%3D%20%22btn%20btn-primary%22%3E%0A%20%20%20%20%20%20%20%20Get%20Message%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A" target="_blank" rel="noopener">https://www.freecodecamp.cn/challenges/change-text-with-click-events#?solution=fccss%0A%20%20%24(document).ready(function()%20%7B%0A%20%20%20%20%24(%22%23getMessage%22).on(%22click%22%2C%20function()%7B%0A%20%20%20%20%20%20%24(%22.message%22).html(%22Here%20is%20the%20message%22)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%7D)%3B%0Afcces%0A%0A%0A%3Cdiv%20class%3D%22container-fluid%22%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Ch2%3ECat%20Photo%20Finder%3C%2Fh2%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Cdiv%20class%20%3D%20%22col-xs-12%20well%20message%22%3E%0A%20%20%20%20%20%20The%20message%20will%20go%20here%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%20%3D%20%22row%20text-center%22%3E%0A%20%20%20%20%3Cdiv%20class%20%3D%20%22col-xs-12%22%3E%0A%20%20%20%20%20%20%3Cbutton%20id%20%3D%20%22getMessage%22%20class%20%3D%20%22btn%20btn-primary%22%3E%0A%20%20%20%20%20%20%20%20Get%20Message%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">true$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">truetrue$(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">truetruetrue$(<span class="string">".message"</span>).html(<span class="string">""</span>Here is the message<span class="string">""</span>);</span><br><span class="line">truetrue)&#125;;</span><br><span class="line">true&#125;);</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://bingblog.top/2018/03/18/python-小记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -964,7 +1085,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -977,7 +1098,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
